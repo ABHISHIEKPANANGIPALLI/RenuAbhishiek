@@ -1,0 +1,80 @@
+body{
+    margin:0px;
+    background-color: pink;
+    /* background-image: url("RA photo.jpeg"); */
+    background-size:contain;
+    background-position:center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 120px;
+    font-family: Arial, sans-serif;
+    height:100vh;
+    overflow: hidden;
+}
+
+.bgImage{
+    background-image: url("RAphoto.jpeg");
+    background-color:pink;
+}
+
+
+.container{
+    position: relative;
+    color: #C2185B;
+;
+}
+
+.button{
+    margin-top: 30px;
+}
+
+button{
+    padding:15px 30px;
+    font-size: 28px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 2s;
+}
+
+#yesBtn{
+    background-color: white;
+    color: #ff4e50;
+}
+
+#noBtn{
+    background-color: whitesmoke;
+    color: black;
+    position: absolute;
+}
+
+.hearts::after {
+  content: "❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️";
+  position: absolute;
+  font-size: 45px;
+  width: 100%;
+  animation: slide 10s ease infinite;
+}
+
+@keyframes slide {
+  from { transform: translateY(-50vh); }  
+  to { transform: translateY(-30vh); }  
+}
+
+
+@media (max-width: 600px) {
+    h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    button{
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
